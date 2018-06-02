@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/system/bin/sh
 i=1
 while [ $i -le 9 ]
 do
@@ -14,6 +14,6 @@ do
 		fi
 		((j++))
 	done
-	echo
 	((i++))
+	echo
 done
