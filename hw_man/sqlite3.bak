@@ -1,0 +1,9 @@
+select * from bookmark where url||titlr like "%vim%";
+update web2 set login_name = username where login_name is null;
+/*同步web2表login_name字段为username字段*/
+查询猫一日
+sqlite3 money.db 'select sum(number) from (select number from shzhi where time<"2016-03-09 00:00:00" group by type);'
+
+sqlite3 money.db 'select type,time,number from shzhi where time<"2016-03-08 00:00:00" group by type;'
+
+sqlite3 /sdcard/programm/databases/zhangh.db 'insert into web(login_name,passwd,addr,phone,mail,class) select login_name,passwd,addr,phone,mail,class from web2016 where class = "offline";'

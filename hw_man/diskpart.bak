@@ -1,0 +1,7 @@
+list disk
+select disk x
+clean
+create partition primary
+select partition 1
+active
+format fs=ntfs quick

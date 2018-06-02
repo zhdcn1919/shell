@@ -1,0 +1,2 @@
+touch -t 08190700 test
+touch dirA/{fileA1.txt,fileA2.txt,fileA3.txt}

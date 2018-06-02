@@ -1,0 +1,1 @@
+查看单个应用程序内存占用量的命令：adb shell dumpsys meminfo $包名 或者 $进程号

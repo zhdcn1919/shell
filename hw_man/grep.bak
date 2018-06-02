@@ -1,0 +1,2 @@
+grep '[[:digit:]]\{3\}' grep_test.txt
+http://linux.cn/article-5453-1.html # linux-grep-command-with-14-different-examples

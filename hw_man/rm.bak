@@ -1,0 +1,3 @@
+shopt -s extglob #  确认开启  extglob  选项   
+cd ~/Downloads  
+rm -v !(*.iso|*.zip)
