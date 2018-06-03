@@ -7,3 +7,7 @@ sqlite3 money.db 'select sum(number) from (select number from shzhi where time<"
 sqlite3 money.db 'select type,time,number from shzhi where time<"2016-03-08 00:00:00" group by type;'
 
 sqlite3 /sdcard/programm/databases/zhangh.db 'insert into web(login_name,passwd,addr,phone,mail,class) select login_name,passwd,addr,phone,mail,class from web2016 where class = "offline";'
+
+# 四舍五入保留2位小数
+select round(1/cast(200 as double),2);
+
