@@ -1,1 +1,0 @@
-wget http://v.cctv.com/flash/live_back/nettv_cctv1/cctv1-2016-03-25-01-002.mp4
