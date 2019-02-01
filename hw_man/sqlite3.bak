@@ -1,8 +1,7 @@
-# 书签
-select * from bookmark where url||titlr like "%vim%";
-
-# 四舍五入保留2位小数
-select round(1/cast(200 as double),2);
+# bookmark.db
+select * from bookmark where url||title like "%vim%";
+# 删除相同数据
+delete from table where rowid not in(select max(rowid) from table group by column);
 
 # money.db
 sqlite3 money.db 'select sum(number) from (select number from shzhi where time<"2016-03-09 00:00:00" group by type);'
@@ -11,11 +10,10 @@ sqlite3 money.db 'select type,time,number from shzhi where time<"2016-03-08 00:0
 select sum(total) from shzhi where time >  "2016-01-01 00:00:00";
 # 计算某一时间资金总额：
 sqlite3 money.db 'select sum(number) from (select type,number,note,time from shzhi where time < "2016-01-01" group by type);'
+# 四舍五入保留2位小数
+select round(1/cast(200 as double),2);
 
 # zhangh.db
 update web2 set login_name = username where login_name is null;
 # /*同步web2表login_name字段为username字段*/
 insert into web(login_name,passwd,addr,phone,mail,class) select login_name,passwd,addr,phone,mail,class from web2016 where class = "offline";
-
-# 删除相同数据
-delete from table where rowid not in(select max(rowid) from table group by column);
