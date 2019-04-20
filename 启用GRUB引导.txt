@@ -1,0 +1,5 @@
+mountvol v: /s
+cd v:\efi
+v:
+dir
+bcdedit /set {bootmgr} path \EFI\ubuntu\grubx64.efi
